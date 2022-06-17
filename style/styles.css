@@ -1,0 +1,63 @@
+/* General Page Layout*/
+body{
+    margin: 0;
+}
+
+/*Header Section*/
+.title {
+    display: flex;
+    background-color: red;
+}
+
+.title .chef{
+    max-width: 100px;
+}
+
+.title h1 {
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+header {
+    background: #55d6aa;
+}
+/*Navbar*/
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 10px;
+    border: red solid 2px;
+    list-style: none;
+}
+/*END Navbar*/
+
+/*END header*/
+
+.description { 
+    background-color: rgb(111, 111, 176);
+    color: aquamarine;
+}
+/*CSS MEDIA QUERIES */
+
+/* Medium Screens */
+@media all and (max-width: 800px) {
+    nav ul {
+        justify-content: space-around;
+    }
+}
+
+/* Small Screens */
+@media all and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
